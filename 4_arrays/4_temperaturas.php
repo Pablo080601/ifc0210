@@ -7,7 +7,6 @@
 
 
 $temperaturas = [12, 15, 13, 12, 16, 11, 13];
-
 $maxima = $temperaturas[0];
 foreach ($temperaturas as $value) {
     if ($value >= $maxima) {
@@ -15,9 +14,7 @@ foreach ($temperaturas as $value) {
     }
 }
 echo "$maxima";
-
 echo "<br>";
-
 $minima = $temperaturas[0];
 foreach ($temperaturas as $value) {
     if ($value <= $minima) {
@@ -25,9 +22,7 @@ foreach ($temperaturas as $value) {
     }
 }
 echo "$minima";
-
 echo "<br>";
-
 $media = 0;
 foreach ($temperaturas as $value) {
     $media += $value;
