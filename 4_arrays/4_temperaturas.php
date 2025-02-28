@@ -27,4 +27,5 @@ $media = 0;
 foreach ($temperaturas as $value) {
     $media += $value;
 }
-echo $media / count($temperaturas);
+$resultado = $media / count($temperaturas);
+echo ("$resultado");
