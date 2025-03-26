@@ -35,15 +35,16 @@ function filtrar($peliculas, $genero)
     $filtro = [];
     foreach ($peliculas as $pelicula) {
 
-        if ($genero == $pelicula["genero"]) {
-            $filtro[] = $pelicula;
+        if ($genero === $pelicula["genero"]) {
+            array_push($filtro, $pelicula);
         }
     }
-
-    foreach ($filtro as $key => $value) {
-        return $value;
-    }
+    return $filtro;
 }
+
+
+var_dump(filtrar($peliculas, "animacion"));
+
 
 function mostrar($peliculas)
 {
